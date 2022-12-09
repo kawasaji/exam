@@ -63,7 +63,7 @@ public:
 		} 
 		cout << char(191) << endl;
 		cout << "|                              |" << endl;
-		cout << "| Bank of baku               " << char(156) << " |" << endl;
+		cout << "| Bank of baku               " << "•" << " |" << endl;
 		cout << "|                              |" << endl;
 		cout << "|                              |" << endl;
 		cout << "| ";
@@ -79,7 +79,9 @@ public:
 		}
 		cout << "          |" << endl;
 		cout << "| ";
-		if (month < 10)
+		int numm;
+		numm = stoi(month);
+		if (numm < 10)
 		{
 			cout << "0" << month << "\\" << year;
 		}
@@ -90,17 +92,19 @@ private:
 	string ownerName;
 	string ownerSurname;
 	string cardNumber;
-	int month;
-	int year;
+	string month;
+	string year;
 };
 
 
 int main()
 {
 
+	int length = 10, k = 0;
+
 	creditCard lol{};
 
-	//lol.print();
+	lol.print();
 
 }
 
