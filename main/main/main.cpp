@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <windows.data.json.h>
 using namespace std;
 
 
@@ -43,7 +44,7 @@ public:
 			cin >> month;
 			system("cls");
 			cout << "--- Create new card ---\n\nenter year expires\n~# ";
-			cin >> month;
+			cin >> year;
 		}
 		catch (exception& error)
 		{
@@ -62,9 +63,17 @@ public:
 			cout << char(196);
 		} 
 		cout << char(191) << endl;
-		cout << "|                              |" << endl;
-		cout << "| Bank of baku               " << "•" << " |" << endl;
-		cout << "|                              |" << endl;
+		cout << "|                              |";
+		if (typeOfCard == 0)
+		{
+			cout << "\tType - credit" << endl;
+		}
+		else
+		{
+			cout << "\tType - debit" << endl;
+		}
+		cout << "| Bank of baku               " << "X" << " |" << "\t" << ownerName << endl;
+		cout << "|                              |" << "\t" << ownerSurname << endl;
 		cout << "|                              |" << endl;
 		cout << "| ";
 		for (size_t i = 0; i < cardNumber.length(); i++)
@@ -85,6 +94,18 @@ public:
 		{
 			cout << "0" << month << "\\" << year;
 		}
+		else
+		{
+			cout << month << "\\" << year;
+		}
+		cout << "                        |" << endl;
+		cout << "|                              |" << endl;
+		cout << char(192);
+		for (size_t i = 0; i < 30; i++)
+		{
+			cout << char(196);
+		}
+		cout << char(217) << endl;
 	}	
 
 private:
