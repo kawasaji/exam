@@ -74,7 +74,7 @@ public:
 		}
 		cout << "| Bank of baku               " << "X" << " |" << "\t" << ownerName << endl;
 		cout << "|                              |" << "\t" << ownerSurname << endl;
-		cout << "|                              |" << endl;
+		cout << "|                              |" << "\tBalance - " << balance << "$" << endl;
 		cout << "| ";
 		for (size_t i = 0; i < cardNumber.length(); i++)
 		{
@@ -108,6 +108,19 @@ public:
 		cout << char(217) << endl;
 	}	
 
+	void increase(int num)
+	{
+		system("cls");
+		cout << "Old balance - " << balance << "$" << endl;
+		this->balance += num;
+		cout << "New balance - " << balance << "$" << endl;
+	}
+
+	void decrease(int num)
+	{
+
+	}
+
 private:
 	bool typeOfCard;
 	string ownerName;
@@ -115,13 +128,24 @@ private:
 	string cardNumber;
 	string month;
 	string year;
+	int balance = 0;
 };
 
 
 int main()
 {
 
-	int length = 10, k = 0;
+	int length = 3, k = 0;
+	creditCard* cards = new creditCard[length];
+	while (true)
+	{
+
+		cout << "[1] - Add new card"
+			<< "[2] - Update balance"
+			<< "[3] - Remove from balance"
+			<< endl;
+
+	}
 
 	creditCard lol{};
 
