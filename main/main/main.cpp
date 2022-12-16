@@ -35,7 +35,7 @@ int main()
 	// JSON
 
 	Document doc;
-	fstream file("notes.json", ios::in);
+	fstream file("cards.json", ios::in);
 	string json;
 
 	while (!file.eof())
@@ -52,9 +52,16 @@ int main()
 	Writer<StringBuffer> writer(buffer);
 	doc.Accept(writer);
 
+	//file.close();
+
 	//cards[0].age = doc["age"].GetInt();
-	cards[0].ownerName = doc["name"].GetString();
-	cards[0].ownerSurname = doc["surname"].GetString();
+	//cards[0].ownerName = doc["cards"]["1"]["name"].GetString();
+	Value& cardsJson = doc["1"].GetArray();
+	cards[0].ownerName = cardsJson["name"].GetString();
+	//cards[0].ownerSurname = doc["surname"].GetString();
+
+	/*fstream file{};
+	file.open("notes.json", ios::in);*/
 
 	// JSON
 

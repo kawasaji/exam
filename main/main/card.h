@@ -69,19 +69,15 @@ public:
 		system("cls");
 		cout << char(218);
 		for (size_t i = 0; i < 30; i++)
-		{
 			cout << char(196);
-		}
 		cout << char(191) << endl;
 		cout << "|                              |";
 		if (typeOfCard == 0)
-		{
 			cout << "\tType - credit" << endl;
-		}
+		
 		else
-		{
 			cout << "\tType - debit" << endl;
-		}
+		
 		cout << "| Bank of baku               " << "X" << " |" << "\t" << ownerName << endl;
 		cout << "|                              |" << "\t" << ownerSurname << endl;
 		cout << "|                              |" << "\tBalance - " << balance << "$" << endl;
@@ -89,17 +85,15 @@ public:
 		for (size_t i = 0; i < cardNumber.length(); i++)
 		{
 			if (i % 4 == 0 && i != 0)
-			{
 				cout << ' ';
-			}
+		
 			cout << cardNumber[i];
-
-
 		}
 		cout << "          |" << endl;
 		cout << "| ";
 		int numm;
 		numm = stoi(month);
+		
 		if (numm < 10)
 		{
 			cout << "0" << month << "\\" << year;
