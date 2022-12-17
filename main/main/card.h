@@ -123,6 +123,9 @@ public:
 
 	void decrease(int num)
 	{
+		cout << "Old balance - " << balance << "$" << endl;
+		this->balance = this->balance - num;
+		cout << "New balance - " << balance << "$" << endl;
 
 	}
 	int typeOfCard;

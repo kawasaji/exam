@@ -23,5 +23,8 @@
     <ClInclude Include="card.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="spends.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
