@@ -1,2 +1,9 @@
 ﻿  main.cpp
-  main.vcxproj -> C:\Users\Gusey_sk41\exam\main\x64\Debug\main.exe
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(42,38): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(43,41): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(44,39): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(45,34): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(46,33): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(47,36): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\Users\Gusey_sk41\Documents\exam\main\main\main.cpp(98,62): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+  main.vcxproj -> C:\Users\Gusey_sk41\Documents\exam\main\x64\Debug\main.exe

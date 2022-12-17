@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+
 class creditCard
 {
 public:
@@ -20,12 +21,12 @@ public:
 		this->year = year;
 	}
 
-	void create()
+	void edit(int index)
 	{
 		try
 		{
 			system("cls");
-			cout << "--- Create new card ---\n\n[0] - credit card\n[1] - debit card\n(0|1)~# ";
+			cout << "--- Edit card ---\n\n[0] - credit card\n[1] - debit card\n(0|1)~# ";
 			cin >> typeOfCard;
 			if (cin.fail() || cin.bad())
 			{
@@ -33,17 +34,16 @@ public:
 			}
 
 			system("cls");
-			cout << "--- Create new card ---\n\nenter cardholder name\n~# ";
+			cout << "--- Edit card ---\n\nenter cardholder name\n~# ";
 			cin >> ownerName;
 
-
 			system("cls");
-			cout << "--- Create new card ---\n\nenter cardholder surname\n~# ";
+			cout << "--- Edit card ---\n\nenter cardholder surname\n~# ";
 			cin >> ownerSurname;
 
 
 			system("cls");
-			cout << "--- Create new card ---\n\nenter card`s number, length must be 16\n~# ";
+			cout << "--- Edit card ---\n\nenter card`s number, length must be 16\n~# ";
 			cin >> cardNumber;
 
 			if (cardNumber.length() < 16 || cardNumber.length() > 16)
@@ -51,11 +51,12 @@ public:
 				throw exception("length error, length must be 16");
 			}
 			system("cls");
-			cout << "--- Create new card ---\n\nenter month expires\n~# ";
+			cout << "--- Edit card ---\n\nenter month expires\n~# ";
 			cin >> month;
 			system("cls");
-			cout << "--- Create new card ---\n\nenter year expires\n~# ";
+			cout << "--- Edit card ---\n\nenter year expires\n~# ";
 			cin >> year;
+
 		}
 		catch (exception& error)
 		{
